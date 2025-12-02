@@ -1,0 +1,27 @@
+import <kirjasto>
+
+def FunktionNimi():
+    <Funktion koodi>
+
+#Pääohjelma
+
+FunktionNimi()
+
+if <ehto>:
+    <Ehdollisesti suoritettava lohko koodia>
+else:
+    <Ajetaan, mikäli ehto ei täyty>
+
+while <ehto = tosi>:
+    <Koodilohko, jota toistetaan>
+
+for <apumuuttuja> in <tietorakenne>:
+    <Koodilohko joka toistetaan jokaiselle tietorakenteen alkiolle>
+
+#Tietorakenteet
+
+minunLista = [x, y, z]
+minunMonikko = (x, y)
+minunJoukko = {z, x, y}
+minunSanakirja = {avain1 : x, avain2 : y, avain3 : z}
+
