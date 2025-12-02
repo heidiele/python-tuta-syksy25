@@ -1,3 +1,27 @@
+#Yhteenlasku
+def summa(num1, num2):
+    print("Yhteenlaskun tulos on:", num1 + num2)
+    return
+
+#Vähennyslasku
+def vahennys(num1, num2):
+    print("Vähennyslaskun tulos on:", num1 - num2)
+    return
+
+#Kertolasku
+def kerto(num1, num2):
+    print("Kertolaskun tulos on:", num1 * num2)
+    return
+
+#Jakolasku
+def jako(num1, num2):
+    if b != 0:
+        print("Jakolaskun tulos on:", num1 / num2)
+    else:
+        print("Nollalla ei voi jakaa!")
+    return
+
+#Pääohjelma
 print("-----Tervetuloa käyttämään laskinta!-----")
 
 while True:
@@ -15,18 +39,12 @@ while True:
     b = float(input("Anna toinen luku: "))
 
     if valinta == "A":
-        print("Yhteenlasku:", a + b)
+        summa(a, b)
     elif valinta == "B":
-        print("Vähennyslasku:", a - b)
+        vahennys(a, b)
     elif valinta == "C":
-        print("Kertolasku:", a * b)
+        kerto(a, b)
     elif valinta == "D":
-        print("Desimaalijakolasku:", a / b)
+        jako(a, b)
     else:
         print("Valintasi oli virheellinen.")
-
-"""
-Päivittäkää laskin tekemään laskutoimitukset funktioissa, eli 4 funktiota: 
-yhteenlaskulle, vähennyslaskulle, kertolaskulle ja desimaalijaolle. If-elif-else
--rakenteessa kutsukaa funktioita.
-"""
