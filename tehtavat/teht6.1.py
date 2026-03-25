@@ -1,13 +1,12 @@
 import random
 
-def noppa(suurin):
-    return random.randint(1, suurin)
+def noppa():
+    return random.randint(1, 6)
 
 #Main program
-suurin = int(input("Kuinka suurta noppaa haluat heittää? "))
 silmaluku = 0
 
-while silmaluku != suurin:
-    silmaluku = noppa(suurin)
+while silmaluku != 6:
+    silmaluku = noppa()
     print("Heiton tulos:", silmaluku)
 
